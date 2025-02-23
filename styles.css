@@ -74,3 +74,16 @@ h1 {
     background-color: #43a047; /* Darker on hover */
     transform: scale(1.05); /* Slightly enlarges on hover */
 }
+
+/* Position the view count at the bottom-right of the screen */
+.view-count {
+    position: fixed;
+    bottom: 20px; /* distance from the bottom */
+    right: 20px;  /* distance from the right */
+    background-color: rgba(0, 0, 0, 0.7); /* background color with transparency */
+    color: white; /* text color */
+    padding: 10px 20px; /* some padding around the text */
+    font-size: 16px; /* font size */
+    border-radius: 5px; /* rounded corners */
+    font-family: Arial, sans-serif; /* font family */
+}
