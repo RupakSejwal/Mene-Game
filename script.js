@@ -75,4 +75,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     startButton.addEventListener('click', createBoard);
+
+    
 });
+
+const counter = document.querySelector('.view-count');
+    async function updateCounter() {
+    let response = await fetch("https://a3ke5hfs5motmqsnsxtlekygxa0kzald.lambda-url.us-east-1.on.aws/");
+    let data = await response.json();
+    counter.innerHTML = `Total Views Count: ${data}`;
+    
+}
+updateCounter();
+
+
+
+
